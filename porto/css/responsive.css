@@ -1,0 +1,1665 @@
+/* ============================================================
+   PORTFOLIO — RESPONSIVE.CSS
+   PART 1 / 2
+   TABLET + MOBILE HERO + PROJECTS
+   ============================================================ */
+
+
+/* ============================================================
+   01. LARGE TABLET — 1100px
+   ============================================================ */
+
+@media (max-width: 1100px) {
+
+    .page-wrapper {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    /* HERO */
+
+    .hero-section {
+        min-height: 720px;
+    }
+
+    .hero-title {
+        font-size: 16vw;
+    }
+
+    .hero-content {
+        grid-template-columns: 40% 60%;
+        min-height: 390px;
+    }
+
+    .hero-visual {
+        height: 390px;
+    }
+
+    .hero-circle {
+        width: 340px;
+    }
+
+    .hero-image-wrapper {
+        width: 330px;
+        height: 355px;
+    }
+
+    .project-badge {
+        right: 3%;
+    }
+
+
+    /* PROJECTS */
+
+    .projects-section {
+        padding-top: 90px;
+        padding-bottom: 105px;
+    }
+
+    .project-image-wrapper {
+        height: 360px;
+    }
+
+    .project-card:nth-child(even) {
+        margin-top: 55px;
+    }
+
+
+    /* SKILLS */
+
+    .skills-section {
+        padding-top: 90px;
+        padding-bottom: 105px;
+    }
+
+    .skills-layout {
+        gap: 40px;
+    }
+
+
+    /* CONTACT */
+
+    .contact-section {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .contact-content {
+        grid-template-columns:
+            1.2fr 0.5fr 1fr;
+
+        gap: 35px;
+    }
+
+    .contact-title {
+        font-size: clamp(3rem, 6vw, 5rem);
+    }
+
+}
+
+
+/* ============================================================
+   02. TABLET — 850px
+   ============================================================ */
+
+@media (max-width: 850px) {
+
+    .page-wrapper {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+
+    /* ========================================================
+       HERO
+       ======================================================== */
+
+    .hero-section {
+        min-height: 700px;
+    }
+
+
+    .hero-title {
+        font-size: 16vw;
+    }
+
+
+    .hero-content {
+        grid-template-columns: 43% 57%;
+        min-height: 380px;
+    }
+
+
+    .hero-intro {
+        max-width: 330px;
+    }
+
+
+    .hero-name {
+        font-size: clamp(3rem, 7vw, 4.5rem);
+    }
+
+
+    .hero-description {
+        width: 260px;
+    }
+
+
+    .hero-visual {
+        height: 380px;
+    }
+
+
+    .hero-circle {
+        left: 5%;
+        width: 330px;
+    }
+
+
+    .hero-image-wrapper {
+        left: 7%;
+        width: 320px;
+        height: 350px;
+    }
+
+
+    .project-badge {
+        right: 1%;
+        width: 100px;
+        height: 100px;
+    }
+
+
+    /* ========================================================
+       PROJECT HEADER
+       ======================================================== */
+
+    .section-header {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+
+    .section-description {
+        max-width: 260px;
+    }
+
+
+    .projects-link {
+        grid-column: 2;
+        justify-self: end;
+    }
+
+
+    /* ========================================================
+       PROJECT GRID
+       ======================================================== */
+
+    .projects-grid {
+        column-gap: 22px;
+        row-gap: 55px;
+    }
+
+
+    .project-card:nth-child(even) {
+        margin-top: 45px;
+    }
+
+
+    .project-image-wrapper {
+        height: 310px;
+    }
+
+
+    .project-name {
+        font-size: 1.7rem;
+    }
+
+
+    /* ========================================================
+       SKILLS
+       ======================================================== */
+
+    .skills-layout {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px 35px;
+    }
+
+
+    .skills-statement {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+
+    .expertise-list {
+        grid-column: 1 / -1;
+    }
+
+
+    /* ========================================================
+       CONTACT
+       ======================================================== */
+
+    .contact-content {
+        grid-template-columns: 1fr 0.65fr;
+        gap: 50px 35px;
+    }
+
+
+    .contact-heading {
+        grid-column: 1 / -1;
+    }
+
+
+    .contact-qr {
+        justify-self: start;
+    }
+
+
+    .contact-details {
+        align-self: end;
+    }
+
+
+    /* ========================================================
+       FOOTER
+       ======================================================== */
+
+    .footer-bottom {
+        grid-template-columns: 1fr auto;
+    }
+
+
+    .footer-links {
+        grid-column: 1 / -1;
+        grid-row: 2;
+
+        justify-content: flex-start;
+    }
+
+}
+
+
+/* ============================================================
+   03. SMALL TABLET — 700px
+   ============================================================ */
+
+@media (max-width: 700px) {
+
+    /* HERO */
+
+    .hero-section {
+        min-height: auto;
+        padding-top: 25px;
+        padding-bottom: 70px;
+    }
+
+
+    .hero-side-label {
+        display: none;
+    }
+
+
+    .hero-title-wrap {
+        margin-top: 35px;
+    }
+
+
+    .hero-title {
+        font-size: 17vw;
+        letter-spacing: -0.09em;
+    }
+
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+
+        min-height: auto;
+
+        margin-top: 45px;
+    }
+
+
+    .hero-intro {
+        width: 100%;
+        max-width: 400px;
+
+        padding-bottom: 0;
+    }
+
+
+    .hero-name {
+        font-size: clamp(3.4rem, 12vw, 5rem);
+    }
+
+
+    .hero-description {
+        width: 320px;
+    }
+
+
+    .hero-visual {
+        width: 100%;
+        height: 470px;
+
+        margin-top: 35px;
+    }
+
+
+    .hero-circle {
+        left: 50%;
+        bottom: 5px;
+
+        width: min(400px, 75vw);
+
+        transform: translateX(-50%);
+    }
+
+
+    .hero-image-wrapper {
+        left: 50%;
+        bottom: 0;
+
+        width: min(390px, 73vw);
+        height: 440px;
+
+        transform: translateX(-50%);
+    }
+
+
+    .project-badge {
+        right: 7%;
+        top: 43%;
+    }
+
+
+    /* PROJECTS */
+
+    .projects-section {
+        padding-top: 75px;
+        padding-bottom: 85px;
+    }
+
+
+    .section-header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 20px;
+
+        margin-bottom: 45px;
+    }
+
+
+    .section-description {
+        max-width: 340px;
+    }
+
+
+    .projects-link {
+        align-self: flex-start;
+    }
+
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        row-gap: 55px;
+    }
+
+
+    .project-card:nth-child(even) {
+        margin-top: 0;
+    }
+
+
+    .project-image-wrapper {
+        height: 420px;
+    }
+
+
+    .project-name {
+        font-size: 2rem;
+    }
+
+
+    /* SKILLS */
+
+    .skills-section {
+        padding-top: 75px;
+        padding-bottom: 85px;
+    }
+
+
+    .skills-heading {
+        margin-bottom: 50px;
+    }
+
+
+    .skills-layout {
+        display: flex;
+        flex-direction: column;
+
+        gap: 55px;
+    }
+
+
+    .skills-statement {
+        padding-left: 15px;
+    }
+
+
+    .expertise-list {
+        width: 100%;
+    }
+
+
+    /* CONTACT */
+
+    .contact-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 45px;
+    }
+
+
+    .contact-heading {
+        width: 100%;
+    }
+
+
+    .contact-qr {
+        align-self: center;
+    }
+
+
+    .contact-details {
+        width: 100%;
+    }
+
+
+    /* FOOTER */
+
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+
+    .footer-links {
+        flex-wrap: wrap;
+
+        gap: 15px 22px;
+    }
+
+
+    .back-to-top {
+        align-self: flex-end;
+    }
+
+}
+
+
+/* ============================================================
+   04. MOBILE — 600px
+   ============================================================ */
+
+@media (max-width: 600px) {
+
+    .page-wrapper {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+    /* ========================================================
+       HERO
+       ======================================================== */
+
+    .hero-section {
+        padding-top: 22px;
+        padding-bottom: 60px;
+    }
+
+
+    .hero-top {
+        align-items: flex-start;
+    }
+
+
+    .hero-meta {
+        font-size: 0.49rem;
+    }
+
+
+    .hero-meta-right {
+        max-width: 145px;
+
+        text-align: right;
+        line-height: 1.4;
+    }
+
+
+    .hero-arrow {
+        width: 30px;
+        flex-shrink: 0;
+    }
+
+
+    .hero-arrow::before {
+        width: 20px;
+    }
+
+
+    .hero-title-wrap {
+        margin-top: 30px;
+    }
+
+
+    .hero-title {
+        font-size: 16.8vw;
+        line-height: 0.8;
+    }
+
+
+    .hero-content {
+        margin-top: 40px;
+    }
+
+
+    .hero-greeting {
+        font-size: 0.65rem;
+    }
+
+
+    .hero-name {
+        font-size: clamp(3.1rem, 15vw, 4.8rem);
+    }
+
+
+    .hero-role {
+        max-width: 260px;
+
+        font-size: 0.58rem;
+        line-height: 1.4;
+    }
+
+
+    .hero-description {
+        width: 100%;
+        max-width: 300px;
+
+        font-size: 0.58rem;
+        line-height: 1.7;
+    }
+
+
+    .hero-signature {
+        font-size: 1.45rem;
+    }
+
+
+    .hero-visual {
+        height: 410px;
+
+        margin-top: 30px;
+    }
+
+
+    .hero-circle {
+        width: min(350px, 82vw);
+    }
+
+
+    .hero-image-wrapper {
+        width: min(340px, 80vw);
+        height: 385px;
+    }
+
+
+    .project-badge {
+        right: 0;
+        top: 42%;
+
+        width: 92px;
+        height: 92px;
+    }
+
+
+    .badge-center {
+        width: 53px;
+        height: 53px;
+    }
+
+
+    .badge-status {
+        font-size: 0.42rem;
+    }
+
+
+    .badge-label {
+        font-size: 0.34rem;
+    }
+
+
+    /* ========================================================
+       PROJECTS
+       ======================================================== */
+
+    .projects-section {
+        padding-top: 65px;
+        padding-bottom: 75px;
+    }
+
+
+    .section-header {
+        margin-bottom: 38px;
+    }
+
+
+    .section-eyebrow {
+        font-size: 1.3rem;
+    }
+
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+
+    .section-description p {
+        font-size: 0.58rem;
+    }
+
+
+    .projects-grid {
+        row-gap: 48px;
+    }
+
+
+    .project-image-wrapper {
+        height: 350px;
+    }
+
+
+    .project-info {
+        grid-template-columns: 38px 1fr;
+
+        margin-top: 15px;
+    }
+
+
+    .project-name {
+        font-size: 1.75rem;
+    }
+
+
+    .project-category {
+        font-size: 0.49rem;
+    }
+
+
+    /* ========================================================
+       SKILLS
+       ======================================================== */
+
+    .skills-section {
+        padding-top: 65px;
+        padding-bottom: 75px;
+    }
+
+
+    .skills-heading {
+        margin-bottom: 45px;
+    }
+
+
+    .skills-list {
+        gap: 24px;
+    }
+
+
+    .skill-name,
+    .skill-percentage {
+        font-size: 0.51rem;
+    }
+
+
+    .skills-statement p {
+        font-size: 1.6rem;
+    }
+
+
+    .quote-mark {
+        font-size: 4rem;
+    }
+
+
+    .expertise-item {
+        grid-template-columns: 42px 1fr;
+
+        gap: 14px;
+
+        padding: 20px 0;
+    }
+
+
+    .expertise-content h3 {
+        font-size: 0.55rem;
+    }
+
+
+    .expertise-content p {
+        font-size: 0.51rem;
+    }
+
+
+    /* ========================================================
+       CONTACT
+       ======================================================== */
+
+    .contact-section {
+        padding-top: 65px;
+        padding-bottom: 70px;
+    }
+
+
+    .contact-title {
+        font-size: clamp(2.8rem, 13vw, 4.5rem);
+    }
+
+
+    .contact-description {
+        font-size: 0.58rem;
+    }
+
+
+    .contact-item {
+        min-height: 55px;
+
+        font-size: 0.53rem;
+    }
+
+
+    /* ========================================================
+       FOOTER
+       ======================================================== */
+
+    .site-footer {
+        padding-top: 32px;
+        padding-bottom: 20px;
+    }
+
+
+    .footer-name {
+        font-size: 1.2rem;
+    }
+
+
+    .footer-links {
+        gap: 14px 20px;
+    }
+
+
+    .footer-links a,
+    .footer-copyright {
+        font-size: 0.44rem;
+    }
+
+}
+/* ============================================================
+   PORTFOLIO — RESPONSIVE.CSS
+   PART 2 / 2
+   SMALL MOBILE + TOUCH + ACCESSIBILITY + FINAL OVERRIDES
+   ============================================================ */
+
+
+/* ============================================================
+   05. MOBILE — 480px
+   ============================================================ */
+
+@media (max-width: 480px) {
+
+    .page-wrapper {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+    /* ========================================================
+       HERO
+       ======================================================== */
+
+    .hero-section {
+        padding-top: 20px;
+        padding-bottom: 55px;
+    }
+
+    .hero-top {
+        gap: 15px;
+    }
+
+    .hero-meta {
+        font-size: 0.44rem;
+        letter-spacing: 0.04em;
+    }
+
+    .hero-meta-left {
+        max-width: 100px;
+    }
+
+    .hero-meta-right {
+        max-width: 125px;
+    }
+
+    .hero-title-wrap {
+        margin-top: 28px;
+    }
+
+    .hero-title {
+        font-size: 16.2vw;
+        letter-spacing: -0.095em;
+    }
+
+    .hero-content {
+        margin-top: 35px;
+    }
+
+    .hero-greeting {
+        margin-bottom: 5px;
+        font-size: 0.6rem;
+    }
+
+    .hero-name {
+        font-size: 15vw;
+        line-height: 0.84;
+    }
+
+    .hero-role {
+        margin-top: 13px;
+        font-size: 0.53rem;
+    }
+
+    .hero-description {
+        max-width: 275px;
+        margin-top: 14px;
+        font-size: 0.55rem;
+    }
+
+    .hero-signature {
+        margin-top: 16px;
+        font-size: 1.3rem;
+    }
+
+    .hero-visual {
+        height: 365px;
+        margin-top: 28px;
+    }
+
+    .hero-circle {
+        width: 78vw;
+        max-width: 330px;
+    }
+
+    .hero-image-wrapper {
+        width: 76vw;
+        max-width: 320px;
+        height: 345px;
+    }
+
+    .project-badge {
+        right: -2px;
+        top: 40%;
+        width: 82px;
+        height: 82px;
+    }
+
+    .badge-ring::after {
+        inset: 9px;
+    }
+
+    .badge-center {
+        width: 48px;
+        height: 48px;
+    }
+
+    .badge-status {
+        font-size: 0.38rem;
+    }
+
+    .badge-label {
+        font-size: 0.3rem;
+    }
+
+
+    /* ========================================================
+       PROJECTS
+       ======================================================== */
+
+    .projects-section {
+        padding-top: 60px;
+        padding-bottom: 65px;
+    }
+
+    .section-eyebrow {
+        font-size: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 1.85rem;
+    }
+
+    .section-description {
+        max-width: 285px;
+    }
+
+    .section-description p {
+        font-size: 0.55rem;
+        line-height: 1.65;
+    }
+
+    .text-link {
+        gap: 12px;
+        font-size: 0.5rem;
+    }
+
+    .text-link .material-symbols-outlined {
+        font-size: 16px;
+    }
+
+    .projects-grid {
+        row-gap: 45px;
+    }
+
+    .project-image-wrapper {
+        height: 315px;
+    }
+
+    .project-overlay .material-symbols-outlined {
+        width: 55px;
+        height: 55px;
+        font-size: 21px;
+    }
+
+    .project-info {
+        grid-template-columns: 34px 1fr;
+        margin-top: 13px;
+    }
+
+    .project-number {
+        font-size: 0.54rem;
+    }
+
+    .project-details {
+        gap: 4px;
+    }
+
+    .project-name {
+        font-size: 1.55rem;
+    }
+
+    .project-category {
+        font-size: 0.45rem;
+    }
+
+
+    /* ========================================================
+       SKILLS
+       ======================================================== */
+
+    .skills-section {
+        padding-top: 60px;
+        padding-bottom: 65px;
+    }
+
+    .skills-heading {
+        margin-bottom: 40px;
+    }
+
+    .skills-list {
+        gap: 22px;
+    }
+
+    .skill-header {
+        margin-bottom: 8px;
+    }
+
+    .skill-name,
+    .skill-percentage {
+        font-size: 0.47rem;
+    }
+
+    .skill-track {
+        height: 1.5px;
+    }
+
+    .skills-statement {
+        padding-left: 12px;
+    }
+
+    .skills-statement p {
+        font-size: 1.45rem;
+        line-height: 1.12;
+    }
+
+    .quote-mark {
+        top: -23px;
+        font-size: 3.5rem;
+    }
+
+    .expertise-item {
+        grid-template-columns: 39px 1fr;
+        gap: 12px;
+        padding: 18px 0;
+    }
+
+    .expertise-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .expertise-icon .material-symbols-outlined {
+        font-size: 15px;
+    }
+
+    .expertise-content h3 {
+        font-size: 0.51rem;
+    }
+
+    .expertise-content p {
+        max-width: 230px;
+        margin-top: 6px;
+        font-size: 0.48rem;
+    }
+
+
+    /* ========================================================
+       CONTACT
+       ======================================================== */
+
+    .contact-section {
+        padding-top: 60px;
+        padding-bottom: 65px;
+    }
+
+    .contact-content {
+        gap: 40px;
+    }
+
+    .contact-heading .section-eyebrow {
+        margin-bottom: 7px;
+    }
+
+    .contact-title {
+        font-size: 13vw;
+        line-height: 0.9;
+    }
+
+    .contact-description {
+        max-width: 260px;
+        margin-top: 17px;
+        font-size: 0.55rem;
+    }
+
+    .contact-qr {
+        width: 115px;
+    }
+
+    .qr-wrapper {
+        width: 85px;
+        height: 85px;
+    }
+
+    .qr-placeholder .material-symbols-outlined {
+        font-size: 45px;
+    }
+
+    .qr-caption {
+        font-size: 0.39rem;
+    }
+
+    .qr-arrow {
+        right: -8px;
+        font-size: 19px;
+    }
+
+    .contact-item {
+        min-height: 52px;
+        gap: 12px;
+        font-size: 0.49rem;
+    }
+
+    .contact-item .material-symbols-outlined {
+        font-size: 16px;
+    }
+
+
+    /* ========================================================
+       FOOTER
+       ======================================================== */
+
+    .site-footer {
+        padding-top: 30px;
+        padding-bottom: 18px;
+    }
+
+    .footer-top {
+        gap: 20px;
+    }
+
+    .footer-label {
+        font-size: 0.43rem;
+    }
+
+    .footer-name {
+        font-size: 1.1rem;
+    }
+
+    .footer-availability {
+        gap: 10px;
+        font-size: 0.42rem;
+    }
+
+    .footer-availability .material-symbols-outlined {
+        font-size: 16px;
+    }
+
+    .footer-divider {
+        margin: 25px 0 18px;
+    }
+
+    .footer-bottom {
+        gap: 22px;
+    }
+
+    .footer-links {
+        gap: 12px 17px;
+    }
+
+    .footer-links a,
+    .footer-copyright {
+        font-size: 0.41rem;
+    }
+
+    .back-to-top {
+        width: 34px;
+        height: 34px;
+    }
+
+    .back-to-top .material-symbols-outlined {
+        font-size: 15px;
+    }
+}
+
+
+/* ============================================================
+   06. EXTRA SMALL MOBILE — 400px
+   ============================================================ */
+
+@media (max-width: 400px) {
+
+    .page-wrapper {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+    /* HERO */
+
+    .hero-section {
+        padding-bottom: 50px;
+    }
+
+    .hero-title {
+        font-size: 15.8vw;
+    }
+
+    .hero-name {
+        font-size: 14.5vw;
+    }
+
+    .hero-role {
+        max-width: 230px;
+        font-size: 0.49rem;
+    }
+
+    .hero-description {
+        max-width: 255px;
+        font-size: 0.53rem;
+    }
+
+    .hero-visual {
+        height: 335px;
+    }
+
+    .hero-circle {
+        width: 78vw;
+    }
+
+    .hero-image-wrapper {
+        width: 75vw;
+        height: 315px;
+    }
+
+    .project-badge {
+        width: 75px;
+        height: 75px;
+    }
+
+    .badge-center {
+        width: 43px;
+        height: 43px;
+    }
+
+    .badge-status {
+        font-size: 0.35rem;
+    }
+
+    .badge-label {
+        font-size: 0.27rem;
+    }
+
+
+    /* PROJECTS */
+
+    .projects-section,
+    .skills-section,
+    .contact-section {
+        padding-top: 55px;
+        padding-bottom: 60px;
+    }
+
+    .section-eyebrow {
+        font-size: 1.1rem;
+    }
+
+    .section-title {
+        font-size: 1.7rem;
+    }
+
+    .project-image-wrapper {
+        height: 285px;
+    }
+
+    .project-name {
+        font-size: 1.4rem;
+    }
+
+    .project-category {
+        font-size: 0.42rem;
+    }
+
+
+    /* SKILLS */
+
+    .skills-statement p {
+        font-size: 1.3rem;
+    }
+
+    .expertise-content h3 {
+        font-size: 0.48rem;
+    }
+
+    .expertise-content p {
+        font-size: 0.45rem;
+    }
+
+
+    /* CONTACT */
+
+    .contact-title {
+        font-size: 12.5vw;
+    }
+
+    .contact-description {
+        font-size: 0.52rem;
+    }
+
+    .contact-item {
+        font-size: 0.46rem;
+    }
+
+
+    /* FOOTER */
+
+    .footer-name {
+        font-size: 1rem;
+    }
+
+    .footer-availability {
+        font-size: 0.39rem;
+    }
+
+    .footer-links {
+        gap: 10px 15px;
+    }
+
+    .footer-links a,
+    .footer-copyright {
+        font-size: 0.38rem;
+    }
+}
+
+
+/* ============================================================
+   07. VERY SMALL MOBILE — 360px
+   ============================================================ */
+
+@media (max-width: 360px) {
+
+    .hero-meta {
+        font-size: 0.4rem;
+    }
+
+    .hero-meta-right {
+        max-width: 110px;
+    }
+
+    .hero-title {
+        font-size: 15.3vw;
+    }
+
+    .hero-name {
+        font-size: 14vw;
+    }
+
+    .hero-visual {
+        height: 300px;
+    }
+
+    .hero-image-wrapper {
+        height: 285px;
+    }
+
+    .hero-circle {
+        width: 76vw;
+    }
+
+    .project-badge {
+        width: 68px;
+        height: 68px;
+    }
+
+    .badge-center {
+        width: 39px;
+        height: 39px;
+    }
+
+    .project-image-wrapper {
+        height: 255px;
+    }
+
+    .project-name {
+        font-size: 1.3rem;
+    }
+
+    .skills-statement p {
+        font-size: 1.2rem;
+    }
+
+    .contact-title {
+        font-size: 12vw;
+    }
+}
+
+
+/* ============================================================
+   08. LANDSCAPE MOBILE
+   ============================================================ */
+
+@media (max-height: 500px) and (orientation: landscape) {
+
+    .hero-section {
+        min-height: auto;
+    }
+
+    .hero-content {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hero-intro {
+        width: 45%;
+    }
+
+    .hero-visual {
+        width: 55%;
+        height: 350px;
+        margin-top: 0;
+    }
+
+    .hero-image-wrapper {
+        height: 330px;
+    }
+
+    .hero-circle {
+        width: 300px;
+    }
+
+    .project-badge {
+        width: 85px;
+        height: 85px;
+    }
+}
+
+
+/* ============================================================
+   09. TOUCH DEVICES
+   ============================================================ */
+
+@media (hover: none) and (pointer: coarse) {
+
+    .custom-cursor {
+        display: none !important;
+    }
+
+
+    /* Prevent hover effects from becoming stuck */
+
+    .project-image-link:hover .project-image {
+        transform: none;
+        filter: none;
+    }
+
+    .project-card:hover .project-name {
+        color: var(--black);
+        transform: none;
+    }
+
+    .project-card:hover .project-number {
+        transform: none;
+    }
+
+    .expertise-item:hover {
+        padding-left: 0;
+    }
+
+    .expertise-item:hover .expertise-icon {
+        background: transparent;
+        color: var(--black);
+        border-color: var(--black);
+        transform: none;
+    }
+
+    .contact-item:hover {
+        color: var(--black);
+        padding-left: 0;
+    }
+
+    .contact-item:hover .material-symbols-outlined {
+        transform: none;
+    }
+
+    .back-to-top:hover {
+        background: transparent;
+        color: var(--black);
+        transform: none;
+    }
+
+    .footer-links a:hover {
+        color: var(--black);
+    }
+
+    .footer-links a:hover::after {
+        transform: scaleX(0);
+    }
+
+}
+
+
+/* ============================================================
+   10. POINTER DEVICES — HOVER ENHANCEMENT
+   ============================================================ */
+
+@media (hover: hover) and (pointer: fine) {
+
+    .project-image-link,
+    .text-link,
+    .contact-item,
+    .footer-links a,
+    .back-to-top {
+        cursor: pointer;
+    }
+
+}
+
+
+/* ============================================================
+   11. ACCESSIBILITY — FOCUS STATES
+   ============================================================ */
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 5px;
+}
+
+
+/* ============================================================
+   12. REDUCED MOTION
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .project-card,
+    .skills-heading,
+    .skills-list,
+    .skills-statement,
+    .expertise-list,
+    .contact-heading,
+    .contact-qr,
+    .contact-details {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    .skill-progress {
+        transition: none !important;
+    }
+
+    .badge-ring {
+        animation: none !important;
+    }
+
+    .custom-cursor {
+        display: none !important;
+    }
+
+}
+
+
+/* ============================================================
+   13. FINAL BOX / OVERFLOW PROTECTION
+   ============================================================ */
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+.page-wrapper,
+main,
+.hero-section,
+.projects-section,
+.skills-section,
+.contact-section,
+.site-footer {
+    max-width: 100%;
+}
+
+
+/* ============================================================
+   14. IMAGE PROTECTION
+   ============================================================ */
+
+img {
+    height: auto;
+}
+
+
+.hero-image,
+.project-image {
+    height: 100%;
+}
+
+
+@media (max-width: 600px) {
+
+    .hero-image,
+    .project-image {
+        width: 100%;
+    }
+
+}
+
+
+/* ============================================================
+   15. FINAL MOBILE SPACING OVERRIDE
+   ============================================================ */
+
+@media (max-width: 480px) {
+
+    .projects-section,
+    .skills-section,
+    .contact-section {
+        width: 100%;
+    }
+
+    .projects-grid,
+    .skills-layout,
+    .contact-content {
+        width: 100%;
+    }
+
+}
+
+
